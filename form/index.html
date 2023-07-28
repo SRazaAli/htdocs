@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container,
+        .child1,
+        .child2 {
+            border-radius: 7px;
+        }
+
+        .container {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin: auto;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            box-shadow: 1px 2px 3px ;
+        }
+
+        .child1 {
+            width: 60%;
+            /* border: 2px solid red; */
+
+        }
+
+        .child2 {
+            width: 47%;
+            /* border: 2px solid blue; */
+        }
+
+        .child1 h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 35px;
+            letter-spacing: -1px;
+            color: #E85151;
+        }
+
+        .child2 img {
+            object-fit: cover;
+            width: 100%;
+            height: 650px;
+        }
+
+        .icons_parent,
+        .icons_child,
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* .icons_parent{
+            border: 2px solid black;
+           
+        } */
+        .icons_child {
+            width: 200px;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+        }
+
+        .icons {
+
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .icons img {
+            padding-top: 10px;
+            width: 20px;
+        }
+
+        .form_parent {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            /* border: 2px solid black; */
+        }
+
+        .para {
+            margin-top: 35px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .form_child {
+            width: 80%;
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .form_child input {
+
+            width: 93%;
+            padding: 0px 12px;
+            height: 46px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 2px solid #CFDEE4;
+        }
+
+        .form_child input::placeholder {
+            color: #D0DFE5;
+
+        }
+    
+        .btn {
+            width: 170px;
+            height: 44px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 9px;
+            background-color: #E85151;
+            border-color: #E85151;
+            box-shadow: none;
+        }
+        .btn2{
+            background-color: white;
+            color: #E85151;
+            margin-left: 15px;
+            outline: none;
+        }
+        .buttons{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="child1">
+
+            <h2>Create Account</h2>
+            <!-- Icons start-->
+            <div class="icons_parent">
+                <div class="icons_child">
+                    <div class="icons">
+                        <div>
+                            <img src="img/google.png" alt="">
+                        </div>
+                    </div>
+                    <div class="icons">
+
+                        <div>
+                            <img src="img/facebook-app-symbol.png" alt="">
+                        </div>
+                    </div>
+                    <div class="icons">
+
+                        <div>
+                            <img src="img/twitter.png" alt="">
+                        </div>
+                    </div>
+                    <div class="icons">
+
+                        <div>
+                            <img src="img/telegram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Icons start-->
+
+            <!-- Registration form start -->
+            <p class="para">or use email for registration</p>
+            <div class="form_parent">
+                <div class="form_child">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Name">
+                        <input style="margin: 20px 0px;" type="text" name="" id="" placeholder="Email">
+                        <input type="password" name="" id="" placeholder="Password">
+
+                </div>
+                </form>
+            </div>
+            <div style="display: flex; justify-content: center; margin:25px 0px 40px 0px; ">
+                <div> <input type="checkbox" name="" id="">I agree to <span style="color: #E85151;">Terms </span> and
+                    <span style="color: #E85151;"> Privacy Policy </span></div>
+            </div>
+
+            <!-- <input type="button" value="Sign Up" class="btn btn1"> -->
+            <div class="buttons">
+              <div>  <button class="btn btn1" >Sign Up</button></div>
+              <div>  <button class="btn btn2" >Sign In</button></div>
+            </div>
+
+
+
+        </div>
+        <div class="checkbox">
+        </div>
+        <div class="child2"><img src="img/formpic.png" alt=""></div>
+    </div>
+
+
+</body>
+
+</html>
