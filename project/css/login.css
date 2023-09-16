@@ -1,0 +1,9 @@
+.team-item{
+    cursor: pointer;
+}
+.user-image{
+    height: 400px; 
+    width: 500px;
+     object-fit: cover;
+
+}
